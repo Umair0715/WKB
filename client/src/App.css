@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --primary : #673AB7 ;
+    --primaryHover : #5323a5 ;
+    --lightSlate : #F8FAFD;
+    --grayText : #9B98B8;
+    --dark : #333;
+    --darkSlate : #E7EAF3;
+    --pure : #fff;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+#select-box-input{
+    padding : 6px 0 !important;
+    outline : none !important; 
+}
+
+.css-t3ipsp-control{
+    border : none !important;
+}

@@ -1,0 +1,23 @@
+.pagination li{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border : 1px solid var(--purpleBlue);
+    font-size: 14px;
+    color: var(--purpleBlue);
+    cursor : pointer;
+}
+.pagination li:not(.next , .previous):hover{
+    background-color: var(--purpleBlue);
+    color: white;
+}
+.pagination .selected {
+    background-color: var(--purpleBlue);
+    color : var(--pure);
+}
+.pagination .next , .pagination .previous{
+    border : none ;
+}

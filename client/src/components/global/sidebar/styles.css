@@ -1,0 +1,38 @@
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+.sidebar {
+    transition: 0.3s all ease-in-out;
+}
+.sidebar.show{
+    left : 0;
+}
+.sideMenu-list{
+    @apply flex flex-col gap-5;
+}
+.sideMenu-item{
+    @apply flex items-center gap-3 hover:text-primary cursor-pointer relative;
+}
+.sideMenu-item.active {
+    @apply text-primary;
+}
+.sideMenu-heading{
+    @apply uppercase  text-[13px] text-grayText mb-4;
+}
+.sideMenu-item-angle{
+    @apply absolute top-1/2 right-0 -translate-y-[45%] text-lg text-grayText;
+}
+.sideMenu-item:hover .sideMenu-item-angle{
+    @apply text-primary;
+}
+
+/* drop menu */
+.sideMenu-dropList{
+    @apply flex flex-col gap-4 text-[15px] pl-7 pt-4; 
+}
+.sideMenu-item:hover .sideMenu-dropCircle , .sideMenu-item.active .sideMenu-dropCircle{
+    @apply bg-primary;
+}
+.sideMenu-dropCircle{
+    @apply w-[7px] h-[7px] bg-gray-300 rounded-full 
+}
